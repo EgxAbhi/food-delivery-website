@@ -9,6 +9,8 @@ import { assets, url } from './assets/assets'
 import { ToastContainer , toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+const url = "https://food-del-backedn-1svx.onrender.com";
+
 const App = () => (
   <div>
     <ToastContainer />

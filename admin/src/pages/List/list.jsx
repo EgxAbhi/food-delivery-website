@@ -3,7 +3,8 @@ import "./list.css";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const List = ({url}) => {
+const List = () => {
+  const URL = "https://food-del-backedn-1svx.onrender.com";
   const [list, setList] = useState([]);
 
   const fetchList = async () => {

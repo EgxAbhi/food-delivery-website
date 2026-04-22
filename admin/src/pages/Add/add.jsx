@@ -4,7 +4,8 @@ import axios from 'axios'
 import { assets } from '../../assets/assets'
 import { toast } from 'react-toastify'
 
-const add = ({url}) => {
+const add = () => {
+    const url = "https://food-del-backedn-1svx.onrender.com";
     const[image,setImage]=useState(false);
     const [data,setData]=useState({
         name:"",
