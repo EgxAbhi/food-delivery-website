@@ -5,10 +5,9 @@ import { Routes, Route } from 'react-router-dom'
 import Add from './pages/Add/add'     
 import List from './pages/List/list'   
 import Order from './pages/Order/order'
+import { assets, url } from './assets/assets'
 import { ToastContainer , toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-const url = "http://localhost:4000";
 
 const App = () => (
   <div>

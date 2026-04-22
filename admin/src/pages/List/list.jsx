@@ -3,13 +3,12 @@ import "./list.css";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const List = () => {
-  const URL = "http://localhost:4000";
+const List = ({url}) => {
   const [list, setList] = useState([]);
 
   const fetchList = async () => {
     try {
-      const res = await axios.get(`${URL}/api/food/list`);
+      const res = await axios.get(`${url}/api/food/list`);
       if (res.status === 200) {
         setList(res.data.data);
       }
@@ -19,7 +18,7 @@ const List = () => {
   };
 
   const removeFood = async(foodId) =>{
-    const res = await axios.post(`${URL}/api/food/remove`,{id : foodId});
+    const res = await axios.post(`${url}/api/food/remove`,{id : foodId});
     await fetchList();
 
     if(res.status === 200){
@@ -49,7 +48,7 @@ const List = () => {
         {list.map((item, index) => {
           return (
             <div key={index} className="list-table-format data">
-              <img src={`${URL}/images/${item.image}`} alt="" />
+              <img src={`${url}/images/${item.image}`} alt="" />
               <p>{item.name}</p>
               <p>{item.category}</p>
               <p>${item.price}</p>
