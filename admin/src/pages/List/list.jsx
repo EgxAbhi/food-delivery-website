@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const List = () => {
-  const URL = "https://food-del-backend-2vjf.onrender.com";
+  const url = "https://food-del-backend-2vjf.onrender.com";
   const [list, setList] = useState([]);
 
   const fetchList = async () => {
