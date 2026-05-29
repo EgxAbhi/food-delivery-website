@@ -9,7 +9,7 @@ import { assets, url } from './assets/assets'
 import { ToastContainer , toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const url = "https://food-del-backend-2vjf.onrender.com";
+const Url = "https://food-del-backend-2vjf.onrender.com";
 
 const App = () => (
   <div>
@@ -19,9 +19,9 @@ const App = () => (
     <div className="app-content">
       <Sidebar />
       <Routes>
-        <Route path="/add" element={<Add url={url} />} />
-        <Route path="/list" element={<List url={url} />} />
-        <Route path="/order" element={<Order url={url} />} />
+        <Route path="/add" element={<Add url={Url} />} />
+        <Route path="/list" element={<List url={Url} />} />
+        <Route path="/order" element={<Order url={Url} />} />
       </Routes>
     </div>
   </div>
