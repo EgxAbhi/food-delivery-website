@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api": "https://food-del-backedn-1svx.onrender.com",
+      "/api": "https://food-del-backend-2vjf.onrender.com",
     },
   },
 });
